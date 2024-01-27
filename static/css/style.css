@@ -1,0 +1,102 @@
+:root {
+    --primary-bg: #003366;
+    --primary-text: #fff;
+    --secondary-bg: #f2f2f2;
+    --secondary-text: #333;
+    --accent-bg: #001a33;
+    --accent-text: #fff;
+    --table-header-bg: #003366;
+    --table-header-text: #fff;
+    --table-even-row-bg: #e6e6e6;
+    --container-bg: #fff;
+    --box-shadow: rgba(0, 51, 102, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+select, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent-bg);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    color: var(--table-header-text);
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-even-row-bg);
+}
+
+.pretty_container {
+    border-radius: 5px;
+    background-color: var(--container-bg);
+    box-shadow: 0 2px 5px var(--box-shadow);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.credit {
+    text-align: center;
+    color: #888;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+
+/* Responsif dengan Bootstrap */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    select, input[type="submit"] {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        margin: 5px 0;
+    }
+}
