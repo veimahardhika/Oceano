@@ -2,19 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "ocekel8.py",
+      "src": "ocean.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/ocekel8.py"
+      "dest": "/ocean.py"
     }
-  ],
-  "functions": {
-    "api/index.js": {
-      "runtime": "vercel-python@latest"
-    }
-  }
+  ]
 }
